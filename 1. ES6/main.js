@@ -233,13 +233,13 @@ let checkEveryArrayMethodWithExample = personsArray.every((singlePerson) => {
 // 5 includes: checks if an element  is present in array or not and returns true/false 
 const fruitsArray1 = ["apple", "banana", "orange"];
 
-console.log(fruitsArray1.includes("sangam"));
+console.log(fruitsArray1.includes("orange"));
 
 
 // 6 indexOf returns index of element if present else returns -1
 const fruitsArray = ["apple", "banana", "orange"];
 
-console.log(fruitsArray.indexOf("sangam"));
+console.log(fruitsArray.indexOf("apple"));
 
 
 
