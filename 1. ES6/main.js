@@ -251,5 +251,29 @@ let IndexOfPErsonFromINDIA=  personsArray.findIndex((singlePerson) =>{
 
 
 
+//Concept 7: Fetch api 
+
+const getProductElement = document.querySelector(".list-of-products");
+
+function renderProducts(getProducts){
+    getProductElement.innerHTML = getProducts.map(singleProductItem => `<p>${singleProductItem.title}</p>`).join(" ")
+}
+
+async function fetchListOfProducts(){
+    try{
+        const apiResponse = await fetch('https://dummyjson.com/products', {
+            method:'GET'
+        })
+
+        const result = await apiResponse.json();
+
+        if(result?.products?.length > 0) renderProducts(result?.products)
+    }
+    catch(e){
+        console.log(e);
+    }
+}
+
+
 
 
