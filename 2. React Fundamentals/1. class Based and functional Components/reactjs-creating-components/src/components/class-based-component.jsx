@@ -76,7 +76,7 @@ class ClassBasedComponent extends Component {
   render() {
     const { showText, changeColor, count, changeCountStyle } = this.state;
 
-    console.log(changeCountStyle);
+    // console.log(changeCountStyle);
 
     return (
       <div>
